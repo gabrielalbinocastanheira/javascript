@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou Estrangeiro?</title>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro?</h1>
+    País: <input type="text" name="txt1" id="txt1">
+    <input type="button" value="Verificar" onclick = 'calcular()'>
+    <div id="res">
+
+    </div>
+    <script>
+     function calcular () {
+            var txt = document.querySelector('input#txt1')
+            var res = document.querySelector('div#res')
+            var txtv = String(txt.value)
+            res.innerHTML = `Você é do pais ${txtv}</p>}`
+            if (txtv =='Brasil','brasil', 'br'){
+            res.innerHTML = '<p>Você é brasileiro!</p>'
+            if (txtv !='Brasil','brasil','br')
+            res.innerHTML = '<p>Você é estrangeiro! </p>'
+        }
+    } 
+    </script>
+    
+</body>
+</html>
